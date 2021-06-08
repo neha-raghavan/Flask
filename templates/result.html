@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block body %}
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4"><legend><h1>YOUR RESULT IS</h1></legend></div>
+            <div class="col-md-4"></div>
+        </div>
+        <form class="form-horizontal">
+                <div class="form-group">
+                    <label class="control-label col-xs-4" for="result"></label>
+                    <div class="col-xs-4" align="center">
+                        <input type="text" name="result" class="form-control" placeholder={{ entry }}>
+                        <label class="control-label col-xs-4" for="result" aria-placeholder={{ entry }}></label>
+                    </div>
+                </div>
+        </form>
+        {% endblock %}
