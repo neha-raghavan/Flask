@@ -13,3 +13,4 @@ class Test_PreToken(unittest.TestCase):
 class Test__infix_evaluatuon(unittest.TestCase):
     def test_infix_evaluation(self):
         self.assertEqual(infix_evaluation('5+6'),11)
+        self.assertEqual(infix_evaluation('5*3+2'),17)

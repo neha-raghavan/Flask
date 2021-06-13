@@ -83,9 +83,9 @@ def check(token):
         return False
 def precedence(token):
     if token=='+' or token== '-':
-        return 1
-    elif token=='*' or token=='/':
         return 2
+    elif token=='*' or token=='/':
+        return 1
     else:
         return 0
 
